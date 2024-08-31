@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>all products</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="images/brand-removebg-preview.png"
+            alt=""
+            class="brand-img"
+          />Super Samar</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="container me-auto">
+            <div id="user-info" class="m-auto"></div>
+
+            <ul>
+              <li class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge">0</span>
+              </li>
+              <li>
+                <p class="mb-0 me-4 cart-text">
+                  cart<i class="fas fa-angle-down" id="angle-down"></i>
+                </p>
+                <div class="carts-products">
+                  <div></div>
+                  <a href="products.html">View All Products</a>
+                </div>
+              </li>
+              <li><a href="login.html" id="log-out">logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h3 class="favour-title text-center m-5">products in cart</h3>
+
+    <div class="container">
+      <div class="row all-products-with-favourite">
+        <div class="col-12 col-md-6 col-lg-4"></div>
+        <div class="card text-center">
+          <img src="images/cup17.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button href="#" class="btn add-to-cart-btn">Add to cart</button>
+            <button class="btn"><i class="fas fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- favourite section============ -->
+    <h3 class="favour-title text-center m-5">Favourite products</h3>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner"></div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/carts.js"></script>
+  </body>
+</html>
